@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC School</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #cccccc;
+        width: 100vw;
+        height: 100dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .Main_Section {
+        width: 50vw;
+        height: 75vh;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10%;
+        gap: 3rem;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+          rgba(17, 17, 26, 0.1) 0px 8px 24px,
+          rgba(17, 17, 26, 0.1) 0px 16px 56px;
+      }
+      .Main_Section > h3 {
+        color: #2c2c2c;
+        text-align: center;
+        font-family: "Spline Sans" sans-serif;
+        font-size: 2.5625rem;
+        font-style: normal;
+        font-weight: 700;
+      }
+      .Options_Section {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .Options_Section > div {
+        width: 100%;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 0.5rem;
+        background: #f3f1ff;
+        color: #000;
+        font-family: "Raleway" sans-serif;
+        font-size: 1.625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        transition: 0.5s ease-out;
+      }
+
+      .Options_Section > div > a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 1.4rem;
+      }
+
+      .Options_Section > div:hover {
+        border-radius: 0.5rem;
+        background: #6135ee;
+        color: #fff;
+        font-family: "Raleway" sans-serif;
+        font-size: 1.625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="Main_Section">
+      <h3>PROCEED AS</h3>
+      <div class="Options_Section">
+        <div>
+          <a href="/findStudent"> <span>Student</span> </a>
+        </div>
+        <div>
+          <a href="/teacher"> <span>Teacher</span></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

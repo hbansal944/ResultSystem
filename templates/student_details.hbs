@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #cccccc;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 100vh;
+      }
+      .Main_Section {
+        width: 50vw;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+          rgba(17, 17, 26, 0.1) 0px 8px 24px,
+          rgba(17, 17, 26, 0.1) 0px 16px 56px;
+      }
+      .BackOption {
+        align-self: flex-start;
+        margin-left: 5%;
+        font-size: 1.3rem;
+        font-family: "Raleway" sans-serif;
+        font-size: 1.625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .BackOption > a {
+        color: black;
+        text-decoration: none;
+      }
+      .Result_Section {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .Result_Section > h3 {
+        width: 75%;
+        text-align: center;
+        color: #000;
+        font-family: "Raleway" sans-serif;
+        font-size: 1.625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: #6135ee;
+        text-decoration: underline;
+      }
+      .Result_Section > div{
+        width: 75%;
+        display: flex;
+        align-items: center;
+        color: #000;
+        font-family: "Raleway" sans-serif;
+        font-size: 1.325rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        justify-content: space-between;
+      }
+      .Result_Section> div > span{
+        width: 35%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Main_Section">
+      <p class="BackOption"><a href="/findStudent">Back</a></p>
+      <div class="Result_Section">
+        <h3>Result</h3>
+        <div>
+          <p>Roll No:</p>
+          <span>{{data.roll_no}}</span>
+        </div>
+        <div>
+          <p>Name:</p>
+          <span>{{data.name}}</span>
+        </div>
+        <div>
+          <p>Date Of Birth:</p>
+          <span>{{data.birth_date}}</span>
+        </div>
+
+        <div>
+          <p>Score:</p>
+          <span>{{data.Score}}</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
